@@ -6,7 +6,7 @@ To run this application locally:-
 2- navigate to mail validator ``` cd mail-validator ```
 3- start the rails server ``` rails s ``` then ``` bundle install ```
 * welcome you have arrived ! 
-![alt text](http://url/to/img.png)
+![alt text](https://i.imgur.com/tx6aw5u.png)
 
 check any mail you want, but don't forget that the application only accepts 5 requests per second.
 
