@@ -1,0 +1,6 @@
+<% if obj["format_valid"] && obj["smtp_check"] %>
+<h1 style="color: darkgreen"> This Email is valid <%= ',but it\s disposable' if obj["disposable"] %></h1>
+<% else %>
+<h1 style="color: darkred"> Invalid Email Domain<%= ', Did you mean ?' if obj["did_you_mean"] != "" %></h1>
+  <h3> <%= obj["did_you_mean"] if obj["did_you_mean"] != "" %> </h3>
+<% end %>

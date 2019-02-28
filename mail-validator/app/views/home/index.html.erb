@@ -1,0 +1,12 @@
+<div class="login">
+  <h1>Check Email</h1>
+  <%= form_for validate_email_path do |f| %>
+    <%= f.email_field :email, placeholder: 'Email Address' %>
+    <div style="padding-top: 10%"></div>
+    <%= f.button 'Check domain validation', type: 'submit', class: 'btn btn-primary btn-block btn-large' %>
+  <% end %>
+  <div style="padding-top: 10%"></div>
+  <% if @result %>
+    <%= render 'messages', obj: @result  %>
+  <% end %>
+</div>
